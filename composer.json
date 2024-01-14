@@ -10,7 +10,12 @@
   ],
   "require": {
     "php": "~8.1.0 || ~8.2.0 || ~8.3.0",
-    "retro-blenders/process-pilot-client": "*"
+    "retro-blenders/process-pilot-client": "*",
+    "laminas/laminas-modulemanager": "*",
+    "laminas/laminas-servicemanager": "*"
+  },
+  "require-dev": {
+    "laminas/laminas-coding-standard": "*"
   },
   "minimum-stability": "dev",
   "autoload": {
@@ -22,5 +27,14 @@
     "psr-4": {
       "ProcessPilot\\Laminas\\Client\\Test\\": "tests"
     }
+  },
+  "config": {
+    "allow-plugins": {
+      "dealerdirect/phpcodesniffer-composer-installer": true
+    }
+  },
+  "scripts": {
+    "phpcs": "phpcs -p",
+    "phpcbf": "phpcbf -p"
   }
 }
