@@ -1,0 +1,26 @@
+{
+  "name": "retro-blenders/laminas-process-pilot-client",
+  "description": "Integrates the process-pilot-client into your Laminas application",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Sebastian Hopfe",
+      "email": "nusphere@retro-blenders.com"
+    }
+  ],
+  "require": {
+    "php": "~8.1.0 || ~8.2.0 || ~8.3.0",
+    "retro-blenders/process-pilot-client": "*"
+  },
+  "minimum-stability": "dev",
+  "autoload": {
+    "psr-4": {
+      "ProcessPilot\\Laminas\\Client\\": "src"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "ProcessPilot\\Laminas\\Client\\Test\\": "tests"
+    }
+  }
+}
